@@ -37,7 +37,7 @@
         android:id="@+id/radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="38dp"
         android:text="Radio Button"
         app:layout_constraintEnd_toEndOf="@+id/checkBox"
         app:layout_constraintHorizontal_bias="0.533"
@@ -48,11 +48,32 @@
         android:id="@+id/spinnerDropDownBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="38dp"
         android:text="Spinner"
         app:layout_constraintEnd_toEndOf="@+id/radioButton"
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="@+id/radioButton"
         app:layout_constraintTop_toBottomOf="@+id/radioButton" />
 
+    <Button
+        android:id="@+id/timePickerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Time Picker"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerDropDownBtn"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/spinnerDropDownBtn"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDropDownBtn" />
+
+    <Button
+        android:id="@+id/datePickerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Date Picker"
+        app:layout_constraintEnd_toEndOf="@+id/timePickerBtn"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/timePickerBtn"
+        app:layout_constraintTop_toBottomOf="@+id/timePickerBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WidgetsApp">
         <activity
+            android:name=".DatePickerScreen"
+            android:exported="false" />
+        <activity
+            android:name=".TimePickerScreen"
+            android:exported="false" />
+        <activity
             android:name=".RadioButtonScreen"
             android:exported="false" />
         <activity
