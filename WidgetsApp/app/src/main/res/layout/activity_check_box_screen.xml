@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckBoxScreen">
+
+    <TextView
+        android:id="@+id/skillTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="Choose your Skills :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/pythonChk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Python"
+        app:layout_constraintEnd_toEndOf="@+id/jsChk"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/jsChk"
+        app:layout_constraintTop_toBottomOf="@+id/jsChk" />
+
+    <CheckBox
+        android:id="@+id/kotlinChk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Kotlin"
+        app:layout_constraintEnd_toStartOf="@+id/pythonChk"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nodeJSChk"
+        app:layout_constraintTop_toBottomOf="@+id/nodeJSChk" />
+
+    <CheckBox
+        android:id="@+id/jsChk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="JavaScript"
+        app:layout_constraintEnd_toEndOf="@+id/mysqlChk"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="@+id/mysqlChk"
+        app:layout_constraintTop_toBottomOf="@+id/mysqlChk" />
+
+    <CheckBox
+        android:id="@+id/mysqlChk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="MySql"
+        app:layout_constraintEnd_toEndOf="@+id/springChk"
+        app:layout_constraintStart_toStartOf="@+id/springChk"
+        app:layout_constraintTop_toBottomOf="@+id/springChk" />
+
+    <CheckBox
+        android:id="@+id/springChk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spring"
+        app:layout_constraintStart_toEndOf="@+id/skillTextTitle"
+        app:layout_constraintTop_toTopOf="@+id/springBootChk" />
+
+    <CheckBox
+        android:id="@+id/springBootChk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="SpringBoot"
+        app:layout_constraintEnd_toStartOf="@+id/springChk"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/skillTextTitle"
+        app:layout_constraintTop_toBottomOf="@+id/skillTextTitle" />
+
+    <CheckBox
+        android:id="@+id/rubyChk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ruby"
+        app:layout_constraintEnd_toStartOf="@+id/mysqlChk"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/springBootChk"
+        app:layout_constraintTop_toBottomOf="@+id/springBootChk" />
+
+    <CheckBox
+        android:id="@+id/nodeJSChk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="NodeJS"
+        app:layout_constraintEnd_toStartOf="@+id/jsChk"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rubyChk"
+        app:layout_constraintTop_toBottomOf="@+id/rubyChk" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

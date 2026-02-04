@@ -35,9 +35,12 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
     }
 
     public fun convertRupeeIntoDollar(rupees: Double): Double {
         return rupees / 91.44
     }
+
 }
