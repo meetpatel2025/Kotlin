@@ -27,12 +27,15 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding.textView.text = counterViewModel.counter.toString()
+//        binding.textView.text = counterViewModel.counter.toString()
+//
+//        binding.countBtn.setOnClickListener {
+//            counterViewModel.incrementCount()
+//            binding.textView.text = counterViewModel.counter.toString()
 
-        binding.countBtn.setOnClickListener {
-            counterViewModel.incrementCount()
-            binding.textView.text = counterViewModel.counter.toString()
+        binding.lifecycleOwner = this
+        binding.eventHandler = counterViewModel
 
-        }
+
     }
 }
