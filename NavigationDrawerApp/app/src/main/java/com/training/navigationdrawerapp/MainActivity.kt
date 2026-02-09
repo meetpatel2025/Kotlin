@@ -57,8 +57,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.message -> {
                     replaceFragment(MessageFragment(), it.title.toString())
                 }
-
-
             }
             true
         }
