@@ -30,11 +30,11 @@ import com.training.quotesapp.model.Quote
 
 //@Preview
 @Composable
-fun QuoteListItem(quote: Quote, onClick : () -> Unit) {
+fun QuoteListItem(quote: Quote, onClick : (quote: Quote) -> Unit) {
     Card(
         colors = CardDefaults.cardColors(Color.White) ,
         elevation = CardDefaults.cardElevation(4.dp),
-        modifier = Modifier.clickable{ onClick() }.padding(8.dp)
+        modifier = Modifier.clickable{ onClick(quote) }.padding(8.dp)
     ) {
         Row(modifier = Modifier.padding(16.dp)) {
             Image(
