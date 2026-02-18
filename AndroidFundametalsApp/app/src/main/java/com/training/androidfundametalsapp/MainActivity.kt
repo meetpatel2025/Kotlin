@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.training.androidfundametalsapp.baseui.topicsHomeScreen
+import com.training.androidfundametalsapp.model.Topics
 import com.training.androidfundametalsapp.ui.theme.AndroidFundametalsAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -27,5 +28,5 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 private fun MainActivity.app() {
-    topicsHomeScreen(data = TopicsController.topicsList)
+    topicsHomeScreen(data = TopicsController.topicsList/*, onClick = (Topics) ->*/)
 }

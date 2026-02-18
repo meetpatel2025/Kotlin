@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -25,20 +26,21 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.unit.dp
 import com.training.androidfundametalsapp.model.Topics
+import com.training.androidfundametalsapp.model.UiTopics
 
 //@Preview
 @Composable
-fun topicList(topic : Topics/*, onClick : () -> Unit*/){
+fun topicList(topic : UiTopics/*, onClick : (Topics) -> Unit*/){
     Card(colors = CardDefaults.cardColors(Color.White),
         elevation = CardDefaults.cardElevation(8.dp),
-        modifier = Modifier.padding(12.dp)
+        modifier = Modifier.padding(12.dp).fillMaxWidth()
         ) {
         Row(modifier = Modifier.padding(16.dp)
             .height(IntrinsicSize.Min),
         verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
-                imageVector = Icons.Filled._4kPlus,
+                imageVector = topic.imageName,
                 alignment = Alignment.TopStart,
                 colorFilter = ColorFilter.tint(Color.Black),
                 contentDescription = "Activity Lifecycle",

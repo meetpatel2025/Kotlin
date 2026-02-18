@@ -10,9 +10,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.training.androidfundametalsapp.model.Topics
+import com.training.androidfundametalsapp.model.UiTopics
 
 @Composable
-fun topicsHomeScreen(data: Array<Topics>/*, onClick : () -> Unit*/) {
+fun topicsHomeScreen(data: List<UiTopics>/*, onClick : (Topics) -> Unit*/) {
     Column() {
         Text(
             "Android Fundamentals",
