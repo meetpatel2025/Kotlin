@@ -59,7 +59,8 @@ object TopicsController {
                 topicID = t.topicID,
                 topicHeader = t.topicHeader,
                 topicDescription = t.topicDescription,
-                imageName = mapImage(t.imageName)
+                imageName = mapImage(t.imageName),
+                file = t.file
             )
         }
     }

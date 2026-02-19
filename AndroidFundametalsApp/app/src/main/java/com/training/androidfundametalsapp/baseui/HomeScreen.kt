@@ -13,7 +13,7 @@ import com.training.androidfundametalsapp.model.Topics
 import com.training.androidfundametalsapp.model.UiTopics
 
 @Composable
-fun topicsHomeScreen(data: List<UiTopics>/*, onClick : (Topics) -> Unit*/) {
+fun topicsHomeScreen(data: List<UiTopics>, onClick : (UiTopics) -> Unit) {
     Column() {
         Text(
             "Android Fundamentals",
@@ -24,6 +24,6 @@ fun topicsHomeScreen(data: List<UiTopics>/*, onClick : (Topics) -> Unit*/) {
             style = MaterialTheme.typography.headlineMedium
         )
 
-        topicListScreen(data = data/*, onClick*/)
+        topicListScreen(data = data, onClick=onClick)
     }
 }

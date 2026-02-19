@@ -7,10 +7,10 @@ import com.training.androidfundametalsapp.model.Topics
 import com.training.androidfundametalsapp.model.UiTopics
 
 @Composable
-fun topicListScreen(data: List<UiTopics>/*, onClick : (Topics) -> Unit*/){
+fun topicListScreen(data: List<UiTopics>, onClick : (UiTopics) -> Unit){
     LazyColumn(content = {
-        items(data){
-            topicList(it/*, onClick*/)
+        items(data, key = {it.topicID}){ topic ->
+            topicList(topic, onClick)
         }
     })
 }

@@ -3,204 +3,271 @@
     "topicID": 1,
     "topicHeader": "Activity Lifecycle",
     "topicDescription": "Explains Android activity states (created, started, resumed, paused, stopped, destroyed) and how to handle transitions safely.",
-    "imageName": "Autorenew"
+    "imageName": "Autorenew",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 2,
+    "imageID": 102,
     "topicHeader": "Adapters",
     "topicDescription": "Covers using Adapter patterns to bind data to list-like UI components such as ListView and RecyclerView.",
-    "imageName": "List"
+    "icon": "Icons.Outlined.List",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 3,
+    "imageID": 103,
     "topicHeader": "Calculator",
     "topicDescription": "Implements a basic calculator with UI inputs and logic for arithmetic operations.",
-    "imageName": "Calculate"
+    "icon": "Icons.Outlined.Calculate",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 4,
+    "imageID": 104,
     "topicHeader": "Counter",
     "topicDescription": "A simple counter app demonstrating event handling, UI updates, and state persistence.",
-    "imageName": "ExposurePlus1"
+    "icon": "Icons.Outlined.ExposurePlus1",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 5,
+    "imageID": 105,
     "topicHeader": "Greetings",
     "topicDescription": "Creates a greeting screen that updates text dynamically based on user input.",
-    "imageName": "TagFaces"
+    "icon": "Icons.Outlined.TagFaces",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 6,
+    "imageID": 106,
     "topicHeader": "Hello World",
     "topicDescription": "Basic Android setup demonstrating layout usage and first app execution.",
-    "imageName": "Language"
+    "icon": "Icons.Outlined.Language",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 7,
+    "imageID": 107,
     "topicHeader": "Intents and Layouts",
     "topicDescription": "Shows navigation between screens using intents with various layout designs.",
-    "imageName": "OpenInNew"
+    "icon": "Icons.Outlined.OpenInNew",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 8,
+    "imageID": 108,
     "topicHeader": "Lucky Number Generator",
     "topicDescription": "Generates and displays a random number while teaching randomness and UI updates.",
-    "imageName": "Casino"
+    "icon": "Icons.Outlined.Casino",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 9,
+    "imageID": 109,
     "topicHeader": "Manifest Exploration",
     "topicDescription": "Explains AndroidManifest entries like permissions, components, and intent filters.",
-    "imageName": "Description"
+    "icon": "Icons.Outlined.Description",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 10,
+    "imageID": 110,
     "topicHeader": "Media Player",
     "topicDescription": "Plays audio or video using Android’s MediaPlayer APIs with lifecycle handling.",
-    "imageName": "PlayCircle"
+    "icon": "Icons.Outlined.PlayCircle",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 11,
+    "imageID": 111,
     "topicHeader": "Unit Converter",
     "topicDescription": "Converts values between different units with proper validation and formatting.",
-    "imageName": "SwapHoriz"
+    "icon": "Icons.Outlined.SwapHoriz",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 12,
+    "imageID": 112,
     "topicHeader": "Android Fundamentals",
     "topicDescription": "Covers the core basics of Android including components, layouts, and resources.",
-    "imageName": "Android"
+    "icon": "Icons.Outlined.Android",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 13,
+    "imageID": 113,
     "topicHeader": "Contacts App with MVVM",
     "topicDescription": "Implements contact management using ViewModel, LiveData, and repository patterns.",
-    "imageName": "Contacts"
+    "icon": "Icons.Outlined.Contacts",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 14,
+    "imageID": 114,
     "topicHeader": "Currency Converter",
     "topicDescription": "Converts currencies using clean UI and accurate numeric handling.",
-    "imageName": "CurrencyExchange"
+    "icon": "Icons.Outlined.CurrencyExchange",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 15,
+    "imageID": 115,
     "topicHeader": "Custom Adapter",
     "topicDescription": "Creates a custom adapter with a custom layout for complex list entries.",
-    "imageName": "ViewList"
+    "icon": "Icons.Outlined.ViewList",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 16,
+    "imageID": 116,
     "topicHeader": "Data Binding Basics",
     "topicDescription": "Uses Android Data Binding to connect UI components directly with data sources.",
-    "imageName": "Link"
+    "icon": "Icons.Outlined.Link",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 17,
+    "imageID": 117,
     "topicHeader": "First Kotlin App",
     "topicDescription": "Introduces Kotlin basics through a simple Android application.",
-    "imageName": "Code"
+    "icon": "Icons.Outlined.Code",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 18,
+    "imageID": 118,
     "topicHeader": "Fragments Introduction",
     "topicDescription": "Demonstrates fragment creation, lifecycle, and fragment transactions.",
-    "imageName": "ViewQuilt"
+    "icon": "Icons.Outlined.ViewQuilt",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 19,
+    "imageID": 119,
     "topicHeader": "Grocery RecyclerView",
     "topicDescription": "Displays grocery items using RecyclerView with adapters and item interactions.",
-    "imageName": "ShoppingCart"
+    "icon": "Icons.Outlined.ShoppingCart",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 20,
+    "imageID": 120,
     "topicHeader": "Image Viewer",
     "topicDescription": "Loads and displays images with zoom/swipe features and optimized loading.",
-    "imageName": "Image"
+    "icon": "Icons.Outlined.Image",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 21,
+    "imageID": 121,
     "topicHeader": "Jetpack Basics",
     "topicDescription": "Introduces Jetpack libraries for modern Android development.",
-    "imageName": "AutoAwesome"
+    "icon": "Icons.Outlined.AutoAwesome",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 22,
+    "imageID": 122,
     "topicHeader": "Jetpack RecyclerView",
     "topicDescription": "Uses Jetpack components like ListAdapter and DiffUtil with RecyclerView.",
-    "imageName": "ViewStream"
+    "icon": "Icons.Outlined.ViewStream",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 23,
+    "imageID": 123,
     "topicHeader": "LiveData Basics",
     "topicDescription": "Observes and reacts to data changes across lifecycle-safe components using LiveData.",
-    "imageName": "ShowChart"
+    "icon": "Icons.Outlined.ShowChart",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 24,
+    "imageID": 124,
     "topicHeader": "Navigation Component",
     "topicDescription": "Implements Jetpack Navigation with graphs, safe args, and structured flow.",
-    "imageName": "Navigation"
+    "icon": "Icons.Outlined.Navigation",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 25,
+    "imageID": 125,
     "topicHeader": "Navigation Drawer",
     "topicDescription": "Creates a side drawer for app navigation using DrawerLayout and NavigationUI.",
-    "imageName": "Menu"
+    "icon": "Icons.Outlined.Menu",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 26,
+    "imageID": 126,
     "topicHeader": "Sample Program",
     "topicDescription": "A small utility project used for testing concepts and running quick experiments.",
-    "imageName": "Terminal"
+    "icon": "Icons.Outlined.Terminal",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 27,
+    "imageID": 127,
     "topicHeader": "Quotes App",
     "topicDescription": "Displays quotes with UI binding and optional sharing features.",
-    "imageName": "FormatQuote"
+    "icon": "Icons.Outlined.FormatQuote",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 28,
+    "imageID": 128,
     "topicHeader": "Service Notifications",
     "topicDescription": "Implements services and foreground notifications for background tasks.",
-    "imageName": "NotificationsActive"
+    "icon": "Icons.Outlined.NotificationsActive",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 29,
+    "imageID": 129,
     "topicHeader": "Services and Broadcasts",
     "topicDescription": "Covers Services and BroadcastReceivers to perform background operations and receive system events.",
-    "imageName": "WifiTethering"
+    "icon": "Icons.Outlined.WifiTethering",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 30,
+    "imageID": 130,
     "topicHeader": "Sports CardView",
     "topicDescription": "Displays sports data using CardView with modern UI styling.",
-    "imageName": "SportsSoccer"
+    "icon": "Icons.Outlined.SportsSoccer",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 31,
+    "imageID": 131,
     "topicHeader": "Permissions & Notifications",
     "topicDescription": "Handles runtime permissions and builds notifications with actions and channels.",
-    "imageName": "Security"
+    "icon": "Icons.Outlined.Security",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 32,
+    "imageID": 132,
     "topicHeader": "ViewPager",
     "topicDescription": "Implements swipe‑based navigation using ViewPager or ViewPager2.",
-    "imageName": "Swipe"
+    "icon": "Icons.Outlined.Swipe",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 33,
+    "imageID": 133,
     "topicHeader": "Volume Calculator",
     "topicDescription": "Uses a grid-based layout to calculate the volume of shapes with input handling.",
-    "imageName": "GridView"
+    "icon": "Icons.Outlined.GridView",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   },
   {
     "topicID": 34,
+    "imageID": 134,
     "topicHeader": "Widgets",
     "topicDescription": "Creates home‑screen widgets using RemoteViews with periodic data updates.",
-    "imageName": "Widgets"
+    "icon": "Icons.Outlined.Widgets",
+    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
   }
 ]

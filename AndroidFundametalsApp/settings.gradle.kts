@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndroidFundametalsApp"
 include(":app")
- 
+include(":libraryofalltopics")

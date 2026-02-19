@@ -2,6 +2,7 @@ package com.training.androidfundametalsapp.baseui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
@@ -30,10 +31,13 @@ import com.training.androidfundametalsapp.model.UiTopics
 
 //@Preview
 @Composable
-fun topicList(topic : UiTopics/*, onClick : (Topics) -> Unit*/){
+fun topicList(topic : UiTopics, onClick : (UiTopics) -> Unit){
     Card(colors = CardDefaults.cardColors(Color.White),
         elevation = CardDefaults.cardElevation(8.dp),
-        modifier = Modifier.padding(12.dp).fillMaxWidth()
+        modifier = Modifier
+            .padding(12.dp)
+            .fillMaxWidth()
+            .clickable{ onClick(topic)}
         ) {
         Row(modifier = Modifier.padding(16.dp)
             .height(IntrinsicSize.Min),

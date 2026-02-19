@@ -9,10 +9,10 @@ import com.training.androidfundametalsapp.model.Topics
 import com.training.androidfundametalsapp.model.UiTopics
 
 @Composable
-fun listOfTopics(data : List<UiTopics>/*, onClick: (Topics) -> Unit */){
+fun listOfTopics(data: List<UiTopics>, onClick: (UiTopics) -> Unit) {
     LazyColumn(content = {
-        items(data){
-            topicList(topic = it, /*onClick*/)
+        items(data, key = { it.topicID }) { topic ->
+            topicList(topic = topic, onClick = onClick)
         }
     })
 

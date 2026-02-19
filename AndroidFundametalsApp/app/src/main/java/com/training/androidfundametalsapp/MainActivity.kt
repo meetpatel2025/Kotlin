@@ -10,6 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import com.training.androidfundametalsapp.baseui.topicsHomeScreen
 import com.training.androidfundametalsapp.model.Topics
@@ -28,5 +29,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 private fun MainActivity.app() {
-    topicsHomeScreen(data = TopicsController.topicsList/*, onClick = (Topics) ->*/)
+    val context = LocalContext.current
+    topicsHomeScreen(data = TopicsController.topicsList, onClick = { topic ->
+        openLegacyActivity(context, topic.file)})
 }
