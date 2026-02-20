@@ -15,12 +15,17 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.training.androidfundametalsapp.baseui.topicsHomeScreen
 import com.training.androidfundametalsapp.model.Topics
 import com.training.androidfundametalsapp.ui.theme.AndroidFundametalsAppTheme
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-            TopicsController.loadAssetsFromJSON(this)
+        CoroutineScope(Dispatchers.IO).launch {
+            TopicsController.loadAssetsFromJSON(applicationContext)
+        }
         setContent {
             app()
         }

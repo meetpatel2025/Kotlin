@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application>
         <!--        1 - Activity Lifecycle-->
         <activity
@@ -46,6 +49,61 @@
             android:exported="false"
             android:theme="@style/Theme.libraryofalltopics" />
 
+        <!--        7 - Intent With Layout-->
+        <activity
+            android:name="com.training.libraryofalltopics.intentwithlayout.IntentMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+        <activity
+            android:name="com.training.libraryofalltopics.intentwithlayout.ConstraintLayout"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+        <activity
+            android:name="com.training.libraryofalltopics.intentwithlayout.ExplicitIntent"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+        <activity
+            android:name="com.training.libraryofalltopics.intentwithlayout.LinearLayoutActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+        <activity
+            android:name="com.training.libraryofalltopics.intentwithlayout.RelativeLayoutActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        8 - LuckNumber-->
+        <activity
+            android:name="com.training.libraryofalltopics.luckynumber.LuckyNumberMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+        <activity
+            android:name="com.training.libraryofalltopics.luckynumber.LuckNumberScreen"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        9 - Manifest-->
+        <activity
+            android:name="com.training.libraryofalltopics.manifest.ManifestMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        10 - Media Player-->
+        <activity
+            android:name="com.training.libraryofalltopics.mediaplayer.MediaPlayerMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        11 - Unit Convertor-->
+        <activity
+            android:name="com.training.libraryofalltopics.unit.UnitMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+<!--        Kotlin Apps-->
+        <!--        13 - Contacts Manager-->
+        <activity
+            android:name="com.training.libraryofalltopics.contacts.ContactsMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
     </application>
 
 </manifest>

@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+//    alias(libs.plugins.kotlin.android)
+//    alias(libs.plugins.ksp)
+
+//    id("com.google.devtools.ksp")
 }
 
 android {
@@ -35,6 +39,7 @@ android {
     buildFeatures {
         compose = true
         viewBinding = true
+        dataBinding = true
     }
 }
 
@@ -55,6 +60,7 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -65,4 +71,10 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended:1.7.8")
 //    implementation(libs.androidx.compose.material)
     implementation("com.google.code.gson:gson:2.13.2")
+//    implementation(libs.converter.gson)
+    val lifecycle_version = "2.10.0"
+    implementation(libs.androidx.room.runtime)
+//    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycle_version}")
 }

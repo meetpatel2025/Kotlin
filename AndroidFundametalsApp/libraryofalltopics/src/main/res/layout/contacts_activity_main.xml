@@ -9,7 +9,7 @@
 
         <variable
             name="contactViewModel"
-            type="com.training.contactsmanagermvvmapp.viewmodel.ContactViewModel" />
+            type="com.training.libraryofalltopics.contacts.viewmodel.ContactViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,7 +19,7 @@
         android:background="@drawable/purple_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ContactsMainActivity">
+        tools:context=".MainActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/innerConstraint"
@@ -30,7 +30,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:context=".ContactsMainActivity">
+            tools:context=".MainActivity">
 
             <EditText
                 android:id="@+id/nameEditText"

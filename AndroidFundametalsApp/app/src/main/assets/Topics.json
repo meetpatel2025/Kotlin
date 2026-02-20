@@ -52,7 +52,7 @@
     "topicHeader": "Intents and Layouts",
     "topicDescription": "Shows navigation between screens using intents with various layout designs.",
     "imageName": "OpenInNew",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.intentwithlayout.IntentMainActivity"
   },
   {
     "topicID": 8,
@@ -60,7 +60,7 @@
     "topicHeader": "Lucky Number Generator",
     "topicDescription": "Generates and displays a random number while teaching randomness and UI updates.",
     "imageName": "Casino",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.luckynumber.LuckyNumberMainActivity"
   },
   {
     "topicID": 9,
@@ -68,7 +68,7 @@
     "topicHeader": "Manifest Exploration",
     "topicDescription": "Explains AndroidManifest entries like permissions, components, and intent filters.",
     "imageName": "Description",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.manifest.ManifestMainActivity"
   },
   {
     "topicID": 10,
@@ -76,7 +76,7 @@
     "topicHeader": "Media Player",
     "topicDescription": "Plays audio or video using Android’s MediaPlayer APIs with lifecycle handling.",
     "imageName": "PlayCircle",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.mediaplayer.MediaPlayerMainActivity"
   },
   {
     "topicID": 11,
@@ -84,7 +84,7 @@
     "topicHeader": "Unit Converter",
     "topicDescription": "Converts values between different units with proper validation and formatting.",
     "imageName": "SwapHoriz",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.unit.UnitMainActivity"
   },
   {
     "topicID": 12,
@@ -100,7 +100,7 @@
     "topicHeader": "Contacts App with MVVM",
     "topicDescription": "Implements contact management using ViewModel, LiveData, and repository patterns.",
     "imageName": "Contacts",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.contacts.ContactsMainActivity"
   },
   {
     "topicID": 14,
