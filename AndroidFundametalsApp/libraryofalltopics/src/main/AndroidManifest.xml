@@ -1,12 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-<application>
-    <activity
-        android:name="com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
-        android:exported="false"/>
+    <application>
+        <!--        1 - Activity Lifecycle-->
+        <activity
+            android:name="com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
 
-</application>
+        <!--        2 - Adapter-->
+        <activity
+            android:name="com.training.libraryofalltopics.adapter.AdapterMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+        <activity
+            android:name="com.training.libraryofalltopics.adapter.CustomAdapter"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+        <activity
+            android:name="com.training.libraryofalltopics.adapter.ArrayAdapter"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        3 - Calculator-->
+        <activity
+            android:name="com.training.libraryofalltopics.calculator.CalculatorMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        4 - Counter-->
+        <activity
+            android:name="com.training.libraryofalltopics.counter.CounterMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        5 - Greeting-->
+        <activity
+            android:name="com.training.libraryofalltopics.greeting.GreetingMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        6 - Hello World-->
+        <activity
+            android:name="com.training.libraryofalltopics.helloworld.HelloWorldMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+    </application>
 
 </manifest>
 
