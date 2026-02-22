@@ -132,7 +132,7 @@
     "topicHeader": "First Kotlin App",
     "topicDescription": "Introduces Kotlin basics through a simple Android application.",
     "imageName": "Code",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.firstkotlin.KotlinMainActivity"
   },
   {
     "topicID": 18,
@@ -140,7 +140,7 @@
     "topicHeader": "Fragments Introduction",
     "topicDescription": "Demonstrates fragment creation, lifecycle, and fragment transactions.",
     "imageName": "ViewQuilt",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.fragments.FragmentMainActivity"
   },
   {
     "topicID": 19,
@@ -148,7 +148,7 @@
     "topicHeader": "Grocery RecyclerView",
     "topicDescription": "Displays grocery items using RecyclerView with adapters and item interactions.",
     "imageName": "ShoppingCart",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.grocery.GroceryMainActivity"
   },
   {
     "topicID": 20,
@@ -156,7 +156,7 @@
     "topicHeader": "Image Viewer",
     "topicDescription": "Loads and displays images with zoom/swipe features and optimized loading.",
     "imageName": "Image",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.imageviewer.ImageViewerMainActivity"
   },
   {
     "topicID": 21,
@@ -164,7 +164,7 @@
     "topicHeader": "Jetpack Basics",
     "topicDescription": "Introduces Jetpack libraries for modern Android development.",
     "imageName": "AutoAwesome",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.androidfundametalsapp.basics.BasicsMainActivity"
   },
   {
     "topicID": 22,

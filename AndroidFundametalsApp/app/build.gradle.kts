@@ -68,6 +68,12 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
+    implementation("androidx.compose.runtime:runtime")
+
+    // Core Compose UI dependencies
+//    implementation("androidx.compose.ui:ui")
+//    implementation("androidx.compose.material3:material3")
+
     // If you want icons without pinning:
     implementation("androidx.compose.material:material-icons-extended")
 
@@ -79,10 +85,5 @@ dependencies {
     val lifecycle_version = "2.10.0"
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
 
-    // Room with KSP
-//    val roomVersion = "2.6.1"
-//    implementation("androidx.room:room-runtime:$roomVersion")
-//    implementation("androidx.room:room-ktx:$roomVersion")
-//    ksp("androidx.room:room-compiler:$roomVersion")
 
 }
