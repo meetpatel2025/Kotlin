@@ -89,10 +89,10 @@
   {
     "topicID": 12,
     "imageID": 112,
-    "topicHeader": "Android Fundamentals",
+    "topicHeader": "Android Basics",
     "topicDescription": "Covers the core basics of Android including components, layouts, and resources.",
     "imageName": "Android",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.helloworld.HelloWorldMainActivity"
   },
   {
     "topicID": 13,
@@ -108,7 +108,7 @@
     "topicHeader": "Currency Converter",
     "topicDescription": "Converts currencies using clean UI and accurate numeric handling.",
     "imageName": "CurrencyExchange",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.currencyConvertor.CurrencyConvertorMainActivity"
   },
   {
     "topicID": 15,
@@ -116,7 +116,7 @@
     "topicHeader": "Custom Adapter",
     "topicDescription": "Creates a custom adapter with a custom layout for complex list entries.",
     "imageName": "ViewList",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.customAdapter.CustomAdapterMainActivity"
   },
   {
     "topicID": 16,
@@ -124,7 +124,7 @@
     "topicHeader": "Data Binding Basics",
     "topicDescription": "Uses Android Data Binding to connect UI components directly with data sources.",
     "imageName": "Link",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.bindingdata.DataBindingMainActivity"
   },
   {
     "topicID": 17,

@@ -99,9 +99,19 @@
             android:exported="false"
             android:theme="@style/Theme.libraryofalltopics" />
 <!--        Kotlin Apps-->
-        <!--        13 - Contacts Manager-->
+        <!--        13 - Currency Convertor-->
         <activity
-            android:name="com.training.libraryofalltopics.contacts.ContactsMainActivity"
+            android:name="com.training.libraryofalltopics.currencyConvertor.CurrencyConvertorMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+        <!--        14 - Planet using Custom Adapter-->
+        <activity
+            android:name="com.training.libraryofalltopics.customAdapter.CustomAdapterMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+        <!--        15 - Data Binding Basics-->
+        <activity
+            android:name="com.training.libraryofalltopics.bindingdata.DataBindingMainActivity"
             android:exported="false"
             android:theme="@style/Theme.libraryofalltopics" />
     </application>
