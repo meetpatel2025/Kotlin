@@ -172,7 +172,7 @@
     "topicHeader": "Jetpack RecyclerView",
     "topicDescription": "Uses Jetpack components like ListAdapter and DiffUtil with RecyclerView.",
     "imageName": "ViewStream",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.androidfundametalsapp.jetpackrecyclerview.RecyclerMainActivity"
   },
   {
     "topicID": 23,
@@ -180,7 +180,7 @@
     "topicHeader": "LiveData Basics",
     "topicDescription": "Observes and reacts to data changes across lifecycle-safe components using LiveData.",
     "imageName": "ShowChart",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.livedata.LiveDataMainActivity"
   },
   {
     "topicID": 24,
@@ -188,7 +188,7 @@
     "topicHeader": "Navigation Component",
     "topicDescription": "Implements Jetpack Navigation with graphs, safe args, and structured flow.",
     "imageName": "Navigation",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.navigations.NavMainActivity"
   },
   {
     "topicID": 25,
@@ -196,7 +196,7 @@
     "topicHeader": "Navigation Drawer",
     "topicDescription": "Creates a side drawer for app navigation using DrawerLayout and NavigationUI.",
     "imageName": "Menu",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.navigationdrawer.NavDrawerMainActivity"
   },
   {
     "topicID": 26,

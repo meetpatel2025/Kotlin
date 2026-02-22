@@ -142,6 +142,24 @@
             android:exported="false"
             android:theme="@style/Theme.libraryofalltopics" />
 
+        <!--        23 - Live Data-->
+        <activity
+            android:name="com.training.libraryofalltopics.livedata.LiveDataMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        24 - Navigation Component-->
+        <activity
+            android:name="com.training.libraryofalltopics.navigations.NavMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        25 - Navigation Drawer-->
+        <activity
+            android:name="com.training.libraryofalltopics.navigationdrawer.NavDrawerMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
     </application>
 
 </manifest>

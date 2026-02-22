@@ -2,4 +2,12 @@
     <string name="app_name">libraryofalltopicsApp</string>
     <string name="first_fragment">First Fragment</string>
     <string name="second_fragment">Second Fragment</string>
+
+
+    <string name="home_fragment">Home Page</string>
+    <string name="setting_fragment">Setting Page</string>
+    <string name="login_fragment">Login Page</string>
+    <string name="message_fragment">Message Page</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

@@ -23,9 +23,14 @@
             </intent-filter>
         </activity>
 
-        <!--    jetpack basics-->
+        <!-- 21   jetpack basics-->
         <activity
             android:name=".basics.BasicsMainActivity"
+            android:exported="false" />
+
+        <!-- 22 jetpack recycler view-->
+        <activity
+            android:name=".jetpackrecyclerview.RecyclerMainActivity"
             android:exported="false" />
     </application>
 
