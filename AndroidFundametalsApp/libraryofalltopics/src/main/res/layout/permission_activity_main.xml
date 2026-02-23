@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_margin="14dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnRequestPerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request All Needed Permissions"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status…"
+        android:paddingTop="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnShowNotiA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Notification: Feature A"/>
+
+    <Button
+        android:id="@+id/btnShowNotiB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Notification: Feature B"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

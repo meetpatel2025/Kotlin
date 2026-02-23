@@ -4,6 +4,26 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application>
         <!--        1 - Activity Lifecycle-->
         <activity
@@ -157,6 +177,31 @@
         <!--        25 - Navigation Drawer-->
         <activity
             android:name="com.training.libraryofalltopics.navigationdrawer.NavDrawerMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        26 - Services -->
+        <activity
+            android:name="com.training.libraryofalltopics.serviceNotification.ServiceMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+        <service android:name=".serviceNotification.MyService" />
+
+        <!--        27 - Services -->
+        <activity
+            android:name="com.training.libraryofalltopics.broadcastservice.BroadcastMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        28 - Card view - Sports -->
+        <activity
+            android:name="com.training.libraryofalltopics.sportscardview.SportsMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics" />
+
+        <!--        28 - Card view - Sports -->
+        <activity
+            android:name="com.training.libraryofalltopics.permissions.PermissionMainActivity"
             android:exported="false"
             android:theme="@style/Theme.libraryofalltopics" />
 

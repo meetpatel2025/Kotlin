@@ -38,6 +38,12 @@ class NavDrawerMainActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val navView: NavigationView = findViewById(R.id.nav_view)
+
+        if (savedInstanceState == null) {
+            replaceFragment(NavDrawerHomeFragment(), getString(R.string.home_fragment))
+            navView.setCheckedItem(R.id.home)
+        }
+
         navView.setNavigationItemSelectedListener{
             it.isChecked = true
             when(it.itemId){

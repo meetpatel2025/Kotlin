@@ -220,7 +220,7 @@
     "topicHeader": "Service Notifications",
     "topicDescription": "Implements services and foreground notifications for background tasks.",
     "imageName": "NotificationsActive",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.serviceNotification.ServiceMainActivity"
   },
   {
     "topicID": 29,
@@ -228,7 +228,7 @@
     "topicHeader": "Services and Broadcasts",
     "topicDescription": "Covers Services and BroadcastReceivers to perform background operations and receive system events.",
     "imageName": "WifiTethering",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.broadcastservice.BroadcastMainActivity"
   },
   {
     "topicID": 30,
@@ -236,7 +236,7 @@
     "topicHeader": "Sports CardView",
     "topicDescription": "Displays sports data using CardView with modern UI styling.",
     "imageName": "SportsSoccer",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.sportscardview.SportsMainActivity"
   },
   {
     "topicID": 31,
@@ -244,7 +244,7 @@
     "topicHeader": "Permissions & Notifications",
     "topicDescription": "Handles runtime permissions and builds notifications with actions and channels.",
     "imageName": "Security",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.permissions.PermissionMainActivity"
   },
   {
     "topicID": 32,

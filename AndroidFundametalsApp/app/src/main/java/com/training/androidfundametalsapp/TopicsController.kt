@@ -43,7 +43,6 @@ import com.training.androidfundametalsapp.model.UiTopics
 
 object TopicsController {
 
-    // Use List<UiTopic> (not Array)
     var topicsList: List<UiTopics> = emptyList()
         private set
 
