@@ -95,14 +95,6 @@
     "file": "com.training.libraryofalltopics.helloworld.HelloWorldMainActivity"
   },
   {
-    "topicID": 13,
-    "imageID": 113,
-    "topicHeader": "Contacts App with MVVM",
-    "topicDescription": "Implements contact management using ViewModel, LiveData, and repository patterns.",
-    "imageName": "Contacts",
-    "file": "com.training.libraryofalltopics.contacts.ContactsMainActivity"
-  },
-  {
     "topicID": 14,
     "imageID": 114,
     "topicHeader": "Currency Converter",
@@ -129,7 +121,7 @@
   {
     "topicID": 17,
     "imageID": 117,
-    "topicHeader": "First Kotlin App",
+    "topicHeader": "First Kotlin Exercise",
     "topicDescription": "Introduces Kotlin basics through a simple Android application.",
     "imageName": "Code",
     "file": "com.training.libraryofalltopics.firstkotlin.KotlinMainActivity"
@@ -199,17 +191,9 @@
     "file": "com.training.libraryofalltopics.navigationdrawer.NavDrawerMainActivity"
   },
   {
-    "topicID": 26,
-    "imageID": 126,
-    "topicHeader": "Sample Program",
-    "topicDescription": "A small utility project used for testing concepts and running quick experiments.",
-    "imageName": "Terminal",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
-  },
-  {
     "topicID": 27,
     "imageID": 127,
-    "topicHeader": "Quotes App",
+    "topicHeader": "Quotes Jetpack",
     "topicDescription": "Displays quotes with UI binding and optional sharing features.",
     "imageName": "FormatQuote",
     "file": "com.training.androidfundametalsapp.quotes.QuotesMainActivity"

@@ -4,23 +4,30 @@ import android.content.Context
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Android
 import androidx.compose.material.icons.outlined.AutoAwesome
+import androidx.compose.material.icons.outlined.AutoGraph
 import androidx.compose.material.icons.outlined.Autorenew
+import androidx.compose.material.icons.outlined.Cable
 import androidx.compose.material.icons.outlined.Calculate
 import androidx.compose.material.icons.outlined.Casino
 import androidx.compose.material.icons.outlined.Code
 import androidx.compose.material.icons.outlined.Contacts
 import androidx.compose.material.icons.outlined.CurrencyExchange
 import androidx.compose.material.icons.outlined.Description
+import androidx.compose.material.icons.outlined.DynamicForm
 import androidx.compose.material.icons.outlined.ExposurePlus1
+import androidx.compose.material.icons.outlined.FilterFrames
 import androidx.compose.material.icons.outlined.FormatQuote
 import androidx.compose.material.icons.outlined.GridView
 import androidx.compose.material.icons.outlined.Image
 import androidx.compose.material.icons.outlined.Language
+import androidx.compose.material.icons.outlined.LibraryAdd
+import androidx.compose.material.icons.outlined.LineWeight
 import androidx.compose.material.icons.outlined.Link
 import androidx.compose.material.icons.outlined.List
 import androidx.compose.material.icons.outlined.Menu
 import androidx.compose.material.icons.outlined.Navigation
 import androidx.compose.material.icons.outlined.NotificationsActive
+import androidx.compose.material.icons.outlined.OpenInBrowser
 import androidx.compose.material.icons.outlined.OpenInNew
 import androidx.compose.material.icons.outlined.PlayCircle
 import androidx.compose.material.icons.outlined.Security
@@ -66,12 +73,12 @@ object TopicsController {
 
     private val iconMap: Map<String, ImageVector> = mapOf(
         "Autorenew"        to Icons.Outlined.Autorenew,
-        "List"             to Icons.Outlined.List,
+        "List"             to Icons.Outlined.Cable,
         "Calculate"        to Icons.Outlined.Calculate,
         "ExposurePlus1"    to Icons.Outlined.ExposurePlus1,
         "TagFaces"         to Icons.Outlined.TagFaces,
         "Language"         to Icons.Outlined.Language,
-        "OpenInNew"        to Icons.Outlined.OpenInNew,
+        "OpenInNew"        to Icons.Outlined.OpenInBrowser,
         "Casino"           to Icons.Outlined.Casino,
         "Description"      to Icons.Outlined.Description,
         "PlayCircle"       to Icons.Outlined.PlayCircle,
@@ -79,15 +86,15 @@ object TopicsController {
         "Android"          to Icons.Outlined.Android,
         "Contacts"         to Icons.Outlined.Contacts,
         "CurrencyExchange" to Icons.Outlined.CurrencyExchange,
-        "ViewList"         to Icons.Outlined.ViewList,
+        "ViewList"         to Icons.Outlined.LineWeight,
         "Link"             to Icons.Outlined.Link,
         "Code"             to Icons.Outlined.Code,
-        "ViewQuilt"        to Icons.Outlined.ViewQuilt,
+        "ViewQuilt"        to Icons.Outlined.FilterFrames,
         "ShoppingCart"     to Icons.Outlined.ShoppingCart,
         "Image"            to Icons.Outlined.Image,
         "AutoAwesome"      to Icons.Outlined.AutoAwesome,
         "ViewStream"       to Icons.Outlined.ViewStream,
-        "ShowChart"        to Icons.Outlined.ShowChart,
+        "ShowChart"        to Icons.Outlined.AutoGraph,
         "Navigation"       to Icons.Outlined.Navigation,
         "Menu"             to Icons.Outlined.Menu,
         "Terminal"         to Icons.Outlined.Terminal,
@@ -98,7 +105,7 @@ object TopicsController {
         "Security"         to Icons.Outlined.Security,
         "Swipe"            to Icons.Outlined.Swipe,
         "GridView"         to Icons.Outlined.GridView,
-        "Widgets"          to Icons.Outlined.Widgets
+        "Widgets"          to Icons.Outlined.DynamicForm
     )
 
     fun mapImage(imageName: String): ImageVector =
