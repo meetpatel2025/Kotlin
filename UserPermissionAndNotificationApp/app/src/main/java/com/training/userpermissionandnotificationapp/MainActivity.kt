@@ -1,6 +1,7 @@
 package com.training.userpermissionandnotificationapp
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
@@ -85,6 +86,7 @@ class MainActivity : AppCompatActivity() {
         // SHOW NOTIFICATIONS (works when app is open/background/closed)
         btnShowNotiA.setOnClickListener {
             ensureNotificationPermissionThen {
+                @SuppressLint("MissingPermission")
                 NotificationHelper.showFeatureNotification(
                     context = this,
                     featureId = "feature_A_123",
@@ -97,6 +99,7 @@ class MainActivity : AppCompatActivity() {
 
         btnShowNotiB.setOnClickListener {
             ensureNotificationPermissionThen {
+                @SuppressLint("MissingPermission")
                 NotificationHelper.showFeatureNotification(
                     context = this,
                     featureId = "offer_B_202",

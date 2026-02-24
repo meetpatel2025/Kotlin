@@ -12,11 +12,12 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
@@ -199,11 +200,15 @@
             android:exported="false"
             android:theme="@style/Theme.libraryofalltopics" />
 
-        <!--        28 - Card view - Sports -->
+        <!--        29 - Permissions and notifications -->
         <activity
             android:name="com.training.libraryofalltopics.permissions.PermissionMainActivity"
             android:exported="false"
-            android:theme="@style/Theme.libraryofalltopics" />
+            android:theme="@style/Theme.libraryofalltopics">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".permissions.PermissionMainActivity" />
+        </activity>
 
     </application>
 

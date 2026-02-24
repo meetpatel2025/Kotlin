@@ -1,6 +1,7 @@
 package com.training.libraryofalltopics.permissions
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
@@ -17,11 +18,9 @@ class PermissionMainActivity : AppCompatActivity() {
     private lateinit var btnShowNotiA: Button
     private lateinit var btnShowNotiB: Button
 
-    /** Request multiple dangerous permissions in one go (SDK-aware list) */
     private val requestMultiplePermissions = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
     ) { grantResults ->
-        // grantResults: Map<String, Boolean>
         val granted = grantResults.filterValues { it }.keys
         val denied  = grantResults.filterValues { !it }.keys
 
@@ -39,7 +38,6 @@ class PermissionMainActivity : AppCompatActivity() {
         }
     }
 
-    /** Single-permission launcher for notifications (optional separate) */
     private val requestNotificationPermission = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) { granted ->
@@ -60,7 +58,6 @@ class PermissionMainActivity : AppCompatActivity() {
         btnShowNotiA = findViewById(R.id.btnShowNotiA)
         btnShowNotiB = findViewById(R.id.btnShowNotiB)
 
-        // Initial UI state based on current permissions
         updateFeatureButtonsEnabled(PermissionUtils.hasAllPermissions(this))
 
         btnRequestPerms.setOnClickListener {
@@ -69,8 +66,6 @@ class PermissionMainActivity : AppCompatActivity() {
                 tvStatus.text = "All permissions already granted ✅"
                 updateFeatureButtonsEnabled(true)
             } else {
-                // If Android 13+, you might want to ask noti perm separately before posting any noti
-                // (We also include it in the multiple request; either is fine.)
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
                     missing.contains(Manifest.permission.POST_NOTIFICATIONS)
                 ) {
@@ -80,33 +75,33 @@ class PermissionMainActivity : AppCompatActivity() {
             }
         }
 
-        // SHOW NOTIFICATIONS (works when app is open/background/closed)
-//        btnShowNotiA.setOnClickListener {
-//            ensureNotificationPermissionThen {
-//                NotificationHelper.showFeatureNotification(
-//                    context = this,
-//                    featureId = "feature_A_123",
-//                    title = "Order #123",
-//                    body = "Tap to view order details",
-//                    notificationId = 1001
-//                )
-//            }
-//        }
+        btnShowNotiA.setOnClickListener {
+            @SuppressLint("MissingPermission")
+            ensureNotificationPermissionThen {
+                NotificationHelper.showFeatureNotification(
+                    context = this,
+                    featureId = "feature_A_123",
+                    title = "Order #123",
+                    body = "Tap to view order details",
+                    notificationId = 1001
+                )
+            }
+        }
 
-//        btnShowNotiB.setOnClickListener {
-//            ensureNotificationPermissionThen {
-//                NotificationHelper.showFeatureNotification(
-//                    context = this,
-//                    featureId = "offer_B_202",
-//                    title = "New Offer",
-//                    body = "Tap to view special offer",
-//                    notificationId = 1002
-//                )
-//            }
-//        }
+        btnShowNotiB.setOnClickListener {
+            @SuppressLint("MissingPermission")
+            ensureNotificationPermissionThen {
+                NotificationHelper.showFeatureNotification(
+                    context = this,
+                    featureId = "offer_B_202",
+                    title = "New Offer",
+                    body = "Tap to view special offer",
+                    notificationId = 1002
+                )
+            }
+        }
     }
 
-    /** If noti permission required on Android 13+, request it before posting. */
     private fun ensureNotificationPermissionThen(action: () -> Unit) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             val missing = PermissionUtils.missingPermissions(this)
@@ -119,13 +114,11 @@ class PermissionMainActivity : AppCompatActivity() {
         action()
     }
 
-    /** Disable features if permissions missing; enable when all granted */
     private fun updateFeatureButtonsEnabled(enabled: Boolean) {
         btnShowNotiA.isEnabled = enabled
         btnShowNotiB.isEnabled = enabled
     }
 
-    /** Handle denied & permanently denied cases with rationale/Settings dialog */
     private fun handleDeniedPermissions(deniedList: List<String>) {
         val permanentlyDenied = deniedList.filter { PermissionUtils.isPermanentlyDenied(this, it) }
         val temporarilyDenied = deniedList - permanentlyDenied.toSet()

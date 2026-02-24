@@ -34,16 +34,11 @@ object NotificationHelper {
         }
     }
 
-    /**
-     * Build a PendingIntent that opens FeatureActivity with the provided featureId.
-     * Uses TaskStackBuilder so back button behaves naturally even if app was closed.
-     */
     private fun pendingIntentToFeature(context: Context, featureId: String): PendingIntent {
         val detailIntent = Intent(context, FeatureActivity::class.java).apply {
             putExtra(FeatureActivity.EXTRA_FEATURE_ID, featureId)
         }
 
-        // Build synthetic back stack: MainActivity -> FeatureActivity
         val stackBuilder = TaskStackBuilder.create(context).apply {
             addParentStack(FeatureActivity::class.java)
             addNextIntent(detailIntent)
@@ -55,7 +50,6 @@ object NotificationHelper {
         )!!
     }
 
-    /** Show a high-priority notification. Tapping it opens FeatureActivity. */
     @RequiresPermission(Manifest.permission.POST_NOTIFICATIONS)
     fun showFeatureNotification(context: Context, featureId: String, title: String, body: String, notificationId: Int) {
         createChannel(context)
@@ -67,7 +61,7 @@ object NotificationHelper {
             .setContentText(body)
             .setSmallIcon(R.drawable.ic_dialog_info)
             .setAutoCancel(true)
-            .setPriority(NotificationCompat.PRIORITY_HIGH) // heads-up on pre-O
+            .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setContentIntent(contentPi)
 
         NotificationManagerCompat.from(context).notify(notificationId, builder.build())
