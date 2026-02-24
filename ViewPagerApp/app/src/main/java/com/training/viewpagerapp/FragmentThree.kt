@@ -12,7 +12,7 @@ class FragmentThree : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_three, container, false)
+        return inflater.inflate(R.layout.view_pager_fragment_three, container, false)
     }
 
 }

@@ -32,6 +32,11 @@
         <activity
             android:name=".jetpackrecyclerview.RecyclerMainActivity"
             android:exported="false" />
+
+        <!-- 27 jetpack Quotes-->
+        <activity
+            android:name=".quotes.QuotesMainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

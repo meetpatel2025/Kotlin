@@ -210,6 +210,49 @@
                 android:value=".permissions.PermissionMainActivity" />
         </activity>
 
+        <!--        30 - View Pager -->
+        <activity
+            android:name="com.training.libraryofalltopics.viewpager.ViewPagerMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics"/>
+
+        <!--        31 - Volume Calculator using Grid Layout -->
+        <activity
+            android:name="com.training.libraryofalltopics.volumecalculator.VolumeCalculatorMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics"/>
+
+        <activity
+            android:name="com.training.libraryofalltopics.volumecalculator.SphereActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics"/>
+
+        <!--        32 - Widgets -->
+        <activity
+            android:name="com.training.libraryofalltopics.widgets.WidgetsMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics"/>
+        <activity
+            android:name="com.training.libraryofalltopics.widgets.CheckBoxScreen"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics"/>
+        <activity
+            android:name="com.training.libraryofalltopics.widgets.DatePickerScreen"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics"/>
+        <activity
+            android:name="com.training.libraryofalltopics.widgets.RadioButtonScreen"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics"/>
+        <activity
+            android:name="com.training.libraryofalltopics.widgets.SpinnerScreen"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics"/>
+        <activity
+            android:name="com.training.libraryofalltopics.widgets.TimePickerScreen"
+            android:exported="false"
+            android:theme="@style/Theme.libraryofalltopics"/>
+
     </application>
 
 </manifest>

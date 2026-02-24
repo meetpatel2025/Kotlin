@@ -212,7 +212,7 @@
     "topicHeader": "Quotes App",
     "topicDescription": "Displays quotes with UI binding and optional sharing features.",
     "imageName": "FormatQuote",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.androidfundametalsapp.quotes.QuotesMainActivity"
   },
   {
     "topicID": 28,
@@ -252,7 +252,7 @@
     "topicHeader": "ViewPager",
     "topicDescription": "Implements swipe‑based navigation using ViewPager or ViewPager2.",
     "imageName": "Swipe",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.viewpager.ViewPagerMainActivity"
   },
   {
     "topicID": 33,
@@ -260,7 +260,7 @@
     "topicHeader": "Volume Calculator",
     "topicDescription": "Uses a grid-based layout to calculate the volume of shapes with input handling.",
     "imageName": "GridView",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.volumecalculator.VolumeCalculatorMainActivity"
   },
   {
     "topicID": 34,
@@ -268,6 +268,6 @@
     "topicHeader": "Widgets",
     "topicDescription": "Creates home‑screen widgets using RemoteViews with periodic data updates.",
     "imageName": "Widgets",
-    "file": "com.training.libraryofalltopics.activitylifecycle.MainActivityLifeCycle"
+    "file": "com.training.libraryofalltopics.widgets.WidgetsMainActivity"
   }
 ]
