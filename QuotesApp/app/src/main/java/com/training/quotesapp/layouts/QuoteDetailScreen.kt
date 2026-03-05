@@ -28,7 +28,6 @@ import androidx.compose.ui.unit.dp
 import com.training.quotesapp.DataManager
 import com.training.quotesapp.model.Quote
 
-
 @Composable
 fun QuoteDetail(quote: Quote) {
 
