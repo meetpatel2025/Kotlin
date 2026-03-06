@@ -13,6 +13,8 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
@@ -36,7 +38,17 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         updateCount()
+
+        CoroutineScope(Dispatchers.Main).launch {
+            task1()
+        }
+
+        CoroutineScope(Dispatchers.Main).launch {
+            task2()
+            printFollowers()
+        }
         executeLongRunnigTaask()
+
 
     }
 
@@ -49,6 +61,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun executeLongRunnigTaask() {
+
         executeBtn.setOnClickListener {
             CoroutineScope(Dispatchers.Main).launch {
                 Log.d(TAG, "Task running in Coroutine Main scope : ${Thread.currentThread()} ")
@@ -60,13 +73,41 @@ class MainActivity : AppCompatActivity() {
 
             val scope = MainScope()
 
-            scope.launch(Dispatchers.Default){
+            scope.launch(Dispatchers.Default) {
                 Log.d(TAG, "Task running in Main scope : ${Thread.currentThread()} ")
             }
 
 //            for (i in 1..100000L) {
 //                Log.d(TAG, "Task running in coroutine - $i ")
 //            }
+
         }
+    }
+
+    suspend fun task1() {
+        Log.d(TAG, "Task-1 Started")
+        delay(1000)
+        Log.d(TAG, "Task-1 Finished")
+    }
+
+    suspend fun task2() {
+        Log.d(TAG, "Task-2 Started")
+        delay(1000)
+        Log.d(TAG, "Task-2 Finished")
+    }
+
+    private suspend fun printFollowers() {
+        var totalFollowers = 0
+        val job = CoroutineScope(Dispatchers.Main).async {
+//            totalFollowers = getFollowers()
+            getFollowers()
+        }
+//        job.join()
+        Log.d(TAG, job.await().toString())
+    }
+
+    private suspend fun getFollowers(): Int {
+        delay(1000)
+        return 148
     }
 }
