@@ -19,7 +19,7 @@ class SecondFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_second, container, false)
 
-        var input = arguments!!.getString("name")
+        var input = requireArguments().getString("name")
         binding.secondFm.text = input.toString()
 
         return binding.root
