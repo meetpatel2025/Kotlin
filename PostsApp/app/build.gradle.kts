@@ -1,11 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
-//    id("com.google.devtools.ksp")
-//    id("com.google.dagger.hilt.android")
-//    id("kotlin-kapt")
-//    alias(libs.plugins.hilt)
-    alias(libs.plugins.ksp)
+//    alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
+    alias(libs.plugins.devtools.ksp)
 }
 
 android {
@@ -52,15 +49,16 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.retrofit)
-    implementation(libs.gson)
-//    implementation(libs.hilt.android)
-//    kapt(libs.hilt.android.compiler)
+//    implementation(libs.converter.gson)
+    implementation(libs.retrofit.converter.gson)
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
 
     implementation(libs.kotlinx.coroutines.android)
-    // ViewModel
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
-    // LiveData
     implementation(libs.androidx.lifecycle.livedata.ktx)
+
+    implementation(libs.kotlinx.coroutines.android)
+
+
 }
