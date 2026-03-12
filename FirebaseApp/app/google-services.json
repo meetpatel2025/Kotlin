@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343870101220",
+    "project_id": "fir-basics-cc822",
+    "storage_bucket": "fir-basics-cc822.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343870101220:android:4e6bbd7ff40daa64263ef1",
+        "android_client_info": {
+          "package_name": "com.training.firebaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3g65246QO-RKbUGjJPPrk9Og8JZo0o4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
